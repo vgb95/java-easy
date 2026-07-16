@@ -1,11 +1,11 @@
 (() => {
 MODULES.push({
-  id: 6, icon: '🚀', title: 'Proyecto Integrador: Mowiz',
+  id: 6, icon: '🚀', title: 'Proyecto Integrador: CineBox',
   desc: 'Sistema de gestión de películas con Clean Architecture, REST API, persistencia, caché y despliegue',
   lessons: [
     {id:'6-01',title:'Modelo de dominio y value objects',
-content:`<h1>🚀 Mowiz — Modelo de dominio puro</h1>
-<p>Construimos <strong>Mowiz</strong>, un sistema tipo IMDb pero más simple: películas, actores, reseñas. Con Clean Architecture y TDD.</p>
+content:`<h1>🚀 CineBox — Modelo de dominio puro</h1>
+<p>Construimos <strong>CineBox</strong>, un sistema tipo IMDb pero más simple: películas, actores, reseñas. Con Clean Architecture y TDD.</p>
 <div class="code-block"><pre><span class="kw">record</span> <span class="typ">PeliculaId</span>(<span class="kw">int</span> valor) { }  <span class="cm">// value object</span>
 <span class="kw">record</span> <span class="typ">Rating</span>(<span class="kw">double</span> valor) {
     <span class="kw">public</span> <span class="typ">Rating</span> {
@@ -33,7 +33,7 @@ exercise:{prompt:'¿Qué ventaja tiene PeliculaId como value object vs un int?',
 code:'',answer:'Type safety, validación centralizada, semántica explícita, fácil modificar futuro'}},
 
     {id:'6-02',title:'Casos de uso y lógica de negocio',
-content:`<h1>⚙️ Casos de uso de Mowiz</h1>
+content:`<h1>⚙️ Casos de uso de CineBox</h1>
 <div class="code-block"><pre><span class="kw">public class</span> <span class="typ">BuscarPeliculas</span> {
     <span class="kw">private final</span> <span class="typ">RepositorioPelicula</span> repo;
     <span class="kw">private final</span> <span class="typ">CachePeliculas</span> cache;  <span class="cm">// otro puerto</span>
@@ -128,7 +128,7 @@ exercise:{prompt:'¿Por qué usar Resultado< T> en vez de lanzar excepciones par
 code:'',answer:'Las excepciones son caras (stack trace), Resultado es un valor, tipado, obliga al llamante a manejar ambos casos'}},
 
     {id:'6-05',title:'Despliegue y CI/CD — el cuadro completo',
-content:`<h1>🚀 Deploy de Mowiz</h1>
+content:`<h1>🚀 Deploy de CineBox</h1>
 <h3>Docker multi-stage build</h3>
 <div class="code-block"><pre><span class="cm"># Etapa 1: compilar</span>
 FROM maven:3-eclipse-temurin-21 AS build

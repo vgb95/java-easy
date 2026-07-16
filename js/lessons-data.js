@@ -934,14 +934,14 @@ public class Main {
   // M6: PROYECTO INTEGRADOR
   // ──────────────────────────────────
   {
-    id: 6, icon: '🚀', title: 'Proyecto Integrador: Mowiz',
+    id: 6, icon: '🚀', title: 'Proyecto Integrador: CineBox',
     desc: 'Construye una mini app estilo IMDb desde cero',
     lessons: [
       {
         id: '6-1', title: 'Modelo de datos',
         content: `
-<h1>🚀 Mowiz — Modelo</h1>
-<p>Vamos a construir <strong>Mowiz</strong>, un sistema para gestionar películas, actores y reseñas.</p>
+<h1>🚀 CineBox — Modelo</h1>
+<p>Vamos a construir <strong>CineBox</strong>, un sistema para gestionar películas, actores y reseñas.</p>
 <div class="code-block"><div class="code-header"><span>📄 Modelo.java</span></div><pre><code><span class="kw">class</span> <span class="typ">Pelicula</span> {
     <span class="kw">int</span> id;
     <span class="typ">String</span> titulo;
@@ -988,9 +988,9 @@ public class Main {
       {
         id: '6-2', title: 'Lógica de negocio',
         content: `
-<h1>⚙️ Lógica de Mowiz</h1>
+<h1>⚙️ Lógica de CineBox</h1>
 <p>Creamos servicios para manejar la lógica.</p>
-<div class="code-block"><div class="code-header"><span>📄 Servicios.java</span></div><pre><code><span class="kw">class</span> <span class="typ">MowizService</span> {
+<div class="code-block"><div class="code-header"><span>📄 Servicios.java</span></div><pre><code><span class="kw">class</span> <span class="typ">CineBoxService</span> {
     <span class="typ">ArrayList</span>&lt;<span class="typ">Pelicula</span>&gt; peliculas = <span class="kw">new</span> <span class="typ">ArrayList</span>&lt;&gt;();
 
     <span class="kw">void</span> agregarPelicula(<span class="typ">String</span> titulo, <span class="kw">int</span> anio, <span class="typ">String</span> genero) {
@@ -1074,10 +1074,10 @@ public class Main {
         id: '6-4', title: 'Menú interactivo',
         content: `
 <h1>🖥️ Menú terminal</h1>
-<p>Un menú interactivo con <code>Scanner</code> para manejar Mowiz desde consola.</p>
+<p>Un menú interactivo con <code>Scanner</code> para manejar CineBox desde consola.</p>
 <div class="code-block"><div class="code-header"><span>📄 Menu.java</span></div><pre><code><span class="kw">import</span> <span class="typ">java</span>.util.*;
 
-<span class="kw">public class</span> <span class="typ">MowizApp</span> {
+<span class="kw">public class</span> <span class="typ">CineBoxApp</span> {
     <span class="kw">public static void</span> main(<span class="typ">String</span>[] args) {
         <span class="typ">Scanner</span> sc = <span class="kw">new</span> <span class="typ">Scanner</span>(<span class="typ">System</span>.in);
         <span class="kw">int</span> opcion;
